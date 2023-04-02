@@ -12,4 +12,11 @@
         display: none;
     }
 
+    .works {
+        display: none;
+    }
+
+    .footer-logo {
+        text-align: center;
+    }
 }

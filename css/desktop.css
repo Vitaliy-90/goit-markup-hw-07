@@ -79,4 +79,104 @@
         color: var(--primary-color)
     }
 
+    /* What are we doing */
+    .works {
+        display: block;
+        padding-bottom: 120px;
+    }
+
+    .works-title {
+        margin-bottom: 72px;
+
+        font-size: 36px;
+        line-height: 1.11;
+        text-align: center;
+        text-transform: capitalize;
+        color: var(--primary-color);
+
+    }
+
+    .works-list {
+        display: flex;
+        width: calc((100% - 48px) / 3);
+        gap: 24px;
+    }
+
+    /*Hero  */
+
+    .hero-title {
+        margin: 0 auto 48px;
+        max-width: 496px;
+        font-size: 56px;
+        line-height: 1.07;
+        text-align: center;
+        color: var(--hero-color);
+    }
+
+    .hero {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 188px;
+        padding-bottom: 188px;
+        text-align: center;
+        background-image:
+            linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/peopleoffice.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .hero-btn {
+        padding: 16px 32px;
+        border-radius: 4px;
+        border-color: var(--logo-color);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+        font-family: inherit;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        color: var(--hero-color);
+        background-color: var(--logo-color);
+        cursor: pointer;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .hero-btn:is(:hover, :focus) {
+        background-color: var(--background-btn);
+    }
+
+    /* footer */
+    .footer {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        background: var(--primary-color);
+    }
+
+    .footer-conctainer {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer-social {
+        margin-left: 120px;
+    }
+
+    .footer-social-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-color: var(--secondary-color);
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+.footer-form {
+    margin-left: auto;
 }

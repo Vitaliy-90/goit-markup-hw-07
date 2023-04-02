@@ -43,6 +43,10 @@
         .advantages-icon-list {
             display: none;
         }
+
+        .works {
+            display: none;
+        }
     }
 
     .advantages-list {
@@ -64,4 +68,64 @@
         line-height: 1.1;
         color: var(--primary-color)
     }
+
+    /*Hero  */
+    .hero-title {
+        margin: 0 auto 36px;
+        max-width: 496px;
+        font-size: 56px;
+        line-height: 1.07;
+        text-align: center;
+        color: var(--hero-color);
+    }
+
+    .hero {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 112px;
+        padding-bottom: 112px;
+        text-align: center;
+        background-image:
+            linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/peopleoffice.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .hero-btn {
+        padding: 16px 32px;
+        border-radius: 4px;
+        border-color: var(--logo-color);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+        font-family: inherit;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        color: var(--hero-color);
+        background-color: var(--logo-color);
+        cursor: pointer;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* footer */
+    .footer {
+        padding-top: 96px;
+        padding-bottom: 96px;
+        background: var(--primary-color);
+    }
+
+    .footer-conctainer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-start;
+        row-gap: 72px;
+        column-gap: 24px;
+    }
+
+
 }
