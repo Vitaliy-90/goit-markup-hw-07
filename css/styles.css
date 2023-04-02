@@ -36,10 +36,15 @@ img {
 }
 
 .container {
-    max-width: 1156px;
-    margin: 0 auto;
-    padding: 0 15px;
+
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+
 
 /* header */
 .header {
@@ -193,17 +198,19 @@ img {
 
 /* advantages */
 .advantages {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .advantages-list {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    row-gap: 72px;
 }
 
 .advantages-item {
-    min-width: 264px;
+    min-width: 396px;
     /* width: calc((100% - 72px) / 4); */
 }
 
@@ -222,9 +229,8 @@ img {
 
 .advantages-subtitle {
     margin-bottom: 8px;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
+    font-size: 36px;
+    line-height: 1.1;
     color: var(--primary-color)
 }
 
@@ -234,25 +240,13 @@ img {
     color: var(--secondary-color);
 }
 
-
-
-.advantages-icon-list {
-    margin-bottom: 8px;
-    display: flex;
-    gap: 24px;
-    justify-content: center;
-    align-items: center;
+@media scree and (min-width:300px),
+(max-width:767px) {
+    .advantages-icon-list {
+        display: none;
+    }
 }
 
-.advantages-icon-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 264px;
-    height: 112px;
-    background: #F4F4FD;
-    border-radius: 4px;
-}
 
 
 
@@ -280,18 +274,21 @@ img {
 
 /* team */
 .team {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
     background-color: var(--logo-second-color);
 }
 
 .team-list {
     display: flex;
-    width: calc((100% - 72px) / 4);
+    flex-wrap: wrap;
+    width: 100%;
     gap: 24px;
+    justify-content: center;
 }
 
 .team-item {
+
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -360,8 +357,8 @@ img {
 
 /* Customers */
 .customers {
-    padding-top: 130px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .customers-title {
@@ -375,7 +372,9 @@ img {
 
 .customers-list {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    column-gap: 16px;
+    row-gap: 72px;
     justify-content: center;
 }
 
@@ -389,6 +388,7 @@ img {
 
 .customers-link {
     display: flex;
+
     justify-content: center;
     align-items: center;
     width: 100%;

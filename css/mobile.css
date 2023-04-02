@@ -1,0 +1,15 @@
+@media screen and (min-width: 480px) {
+    .container {
+        max-width: 428px;
+    }
+
+    .team {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+
+    .advantages-icon-list {
+        display: none;
+    }
+
+}
