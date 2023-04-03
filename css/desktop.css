@@ -211,4 +211,33 @@
     }
 
 
+
+    /* header */
+
+    .header-container {
+        display: flex;
+        align-items: center;
+
+    }
+
+    .header-nav {
+        display: flex;
+    }
+
+    .header-list {
+        display: flex;
+        gap: 40px;
+        margin-left: 76px;
+        align-items: center;
+    }
+
+    .address {
+        margin-left: auto;
+    }
+
+    .address-list {
+        display: flex;
+        gap: 40px;
+        flex-direction: row;
+    }
 }

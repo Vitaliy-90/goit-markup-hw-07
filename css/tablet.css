@@ -166,4 +166,29 @@
     }
 
 
+    /* header */
+    .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+    }
+
+    .header-nav {
+        display: flex;
+    }
+
+    .header-list {
+        display: flex;
+        gap: 40px;
+        margin-left: 76px;
+        align-items: center;
+    }
+
+    .address-list {
+        display: flex;
+        gap: 12px;
+        flex-direction: column;
+    }
 }
