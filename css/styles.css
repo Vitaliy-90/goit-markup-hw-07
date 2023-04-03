@@ -210,7 +210,7 @@ img {
 }
 
 .advantages-item {
-    min-width: 396px;
+    /* min-width: 396px; */
     /* width: calc((100% - 72px) / 4); */
 }
 

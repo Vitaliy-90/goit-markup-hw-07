@@ -159,6 +159,7 @@
     .footer-conctainer {
         display: flex;
         flex-direction: row;
+        padding: 0;
     }
 
     .footer-social {
