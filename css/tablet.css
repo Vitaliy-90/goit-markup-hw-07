@@ -191,4 +191,10 @@
         gap: 12px;
         flex-direction: column;
     }
+
+    .menu-btn {
+        display: none;
+    }
+
+
 }
