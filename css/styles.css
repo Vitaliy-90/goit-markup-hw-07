@@ -162,11 +162,23 @@ img {
     text-align: center;
     background-image:
         linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url(../images/peopleoffice.jpg);
+        url(../images/hero-img-mob.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero {
+        background-image:
+            linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/hero-img-mob-2x.jpg);
+    }
+}
+
+
 
 .hero-title {
     margin: 0 auto 72px;
@@ -957,11 +969,11 @@ img {
     background-color: #ffffff;
 } */
 
-/* @media (min-width: 767px) {
+@media (min-width: 767px) {
     .menu {
         display: none;
     }
-} */
+}
 
 .menu-container {
     display: flex;
@@ -972,7 +984,7 @@ img {
     left: 0;
     width: 100vw;
     height: 100vh;
-    padding: 32px;
+    padding: 80px 40px 40px;
     background-color: #ffffff;
     z-index: 999;
     transform: translateX(100%);
@@ -1001,5 +1013,47 @@ img {
     text-transform: capitalize;
     color: var(--primary-color);
 }
+
+.contact {
+    color: var(--logo-color);
+}
+
 .address-mobile-list {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 40px;
+    margin-top: auto;
+
+}
+
+.mob-address-tel {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-decoration: none;
+
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+
+
+
+    color: var(--logo-color);
+}
+
+.mob-address-mail {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+
+
+
+    color: #434455;
+}
+
+.mobile-team-list {
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-between;
 }
